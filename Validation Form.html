@@ -34,7 +34,35 @@ if(document.SignUp.phone.value.length == 0)
 window.alert("Error: Missing Phone Number");
 return;
 }
-
+if(document.SignUp.pass.value.length == 0)
+{
+window.alert("Error: Missing Password");
+return;
+}
+if(document.SignUp.cpass.value.length == 0)
+{
+window.alert("Error: Missing Confirm Password");
+return;
+}
+if(isNaN(document.SignUp.phone.value))
+{
+window.alert("Type phone number with numeric values");
+return;
+}
+if((document.SignUp.phone.value.length<10) || (document.SignUp.phone.value.length>10))
+{
+window.alert("Type phone number with 10 numeric values");
+return;
+}
+if(document.SignUp.pass.value.length!==document.SignUp.cpass.value.length)
+{
+window.alert("Password and Confirm Password are not equal.");
+return;
+}
+if(!document.SignUp.a.checked)
+{
+window.alert("Please tick to agree to the terms of use");
+}
 }
 </script>
 <title></title>
