@@ -1,6 +1,42 @@
 <html>
 <title></title>
 <head>
+<script language ="javaScript" type="text/javascript">
+function validation()
+{
+if(document.SignUp.fname.value.length == 0)
+{
+window.alert("Error: Missing First Name");
+return;
+}
+if(document.SignUp.lname.value.length == 0)
+{
+window.alert("Error: Missing last Name");
+return;
+}
+if(document.SignUp.dte.value.length == 0)
+{
+window.alert("Error: Missing Date of Birth");
+return;
+}
+if(document.SignUp.Country.value==0)
+{
+window.alert("Error: Missing Country");
+return;
+}
+if(document.SignUp.email.value.length == 0)
+{
+window.alert("Error: Missing E-mail");
+return;
+}
+if(document.SignUp.phone.value.length == 0)
+{
+window.alert("Error: Missing Phone Number");
+return;
+}
+
+}
+</script>
 <title></title>
 </head>
 <body>
